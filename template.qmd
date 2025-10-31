@@ -1,0 +1,41 @@
+---
+title: "Our Man Bashir"
+date: today
+author:
+  - name: Julian Bashir
+    affiliations:
+      - id: ds9
+        name: Deep Space Nine
+      - id: med
+        name: Starfleet Medical
+  - name: Elim Garak
+    affiliations:
+      - ref: ds9
+abstract: |
+  In this episode, Dr. Julian Bashir (Alexander Siddig) plays a 1960s secret 
+  agent in a holosuite game, accompanied by his friend Garak (Andrew Robinson), 
+  who is himself a former spy. After a transporter accident, the physical 
+  likenesses of several crew members are temporarily stored as characters in the 
+  holosuite memory; Bashir and Garak must prevent any of them from dying in the 
+  game or else they will be lost to the real world.
+keywords:
+  - holosuite malfunction
+  - secret agent
+target_journal: Journal of Starfleet Medical
+correspondence: j.bashir@starfleet.com (Julian Bashir)
+format:
+  manuscript-typst: default
+---
+
+## Introduction
+
+*TODO* Create an example file that demonstrates the formatting and features of your format.
+
+## More Information
+
+You can learn more about creating custom Typst templates here: 
+
+<https://quarto.org/docs/prerelease/1.4/typst.html#custom-formats>
+
+
+
