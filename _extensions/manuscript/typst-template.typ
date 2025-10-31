@@ -8,7 +8,7 @@
   target_journal: [],
   correspondence: [],
   font: "libertinus serif",
-  fontsize: 11pt,
+  fontsize: 12pt,
   doc,
 ) = {
   set page(
@@ -37,11 +37,11 @@
   for (i, aff) in unique-affiliations.enumerate() {
     affiliation-map.insert(aff, i + 1)
   }
-  for author in authors {
+  authors.map(author => {
     let author-affs = if type(author.affiliation) == array { author.affiliation } else { (author.affiliation,) }
     let aff-nums = author-affs.map(aff => str(affiliation-map.at(aff)))
-    [#author.name#super[#aff-nums.join(",")], ]
-  }
+    [#author.name#super[#aff-nums.join(",")]]
+  }).join([, ])
   v(1em)
 
   // affiliations
