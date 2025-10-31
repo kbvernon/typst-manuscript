@@ -1,6 +1,6 @@
 # Manuscript template
 
-![Typst](https://img.shields.io/badge/typst-239DAD.svg?style=for-the-badge&logo=typst&logoColor=white)
+[![Typst](https://img.shields.io/badge/typst-239DAD.svg?style=for-the-badge&logo=typst&logoColor=white)](https://typst.app/)
 [![Static
 Badge](https://img.shields.io/badge/Quarto-74AADB.svg?style=for-the-badge&logo=Quarto)](https://quarto.org)
 
