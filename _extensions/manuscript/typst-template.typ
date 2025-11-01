@@ -12,9 +12,8 @@
   doc,
 ) = {
   set page(
-    paper: "us-letter",
-    margin: (x: 1in, y: 1in),
-    numbering: "1",
+    paper: "us-letter", 
+    margin: (x: 1in, y: 1in)
   )
   set par(justify: false)
   set text(lang: "en",
@@ -70,6 +69,9 @@
   // correspondence
   [*Correspondence:* #correspondence]
   pagebreak()
+
+  set page(numbering: "1")
+  counter(page).update(1)
 
   // main
   doc
