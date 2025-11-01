@@ -21,6 +21,8 @@
            font: font,
            size: fontsize)
   set heading(numbering: "1.1.")
+  show heading.where(level: 1): it => block(it, below: 1.2em) 
+  show heading.where(level: 2): it => block(it, below: 0.9em) 
 
   // title page
   text(size: 1.5em)[#title]
