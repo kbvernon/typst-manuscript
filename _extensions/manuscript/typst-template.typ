@@ -21,8 +21,8 @@
   )
   set text(
     lang: "en",
-           region: "US",
-           font: font,
+    region: "US",
+    font: font,
     size: fontsize
   )
   set heading(numbering: "1.1.")
