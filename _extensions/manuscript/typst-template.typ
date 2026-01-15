@@ -59,6 +59,8 @@
     it.body
   }
 
+  set list(indent: 0.25in)
+  set enum(indent: 0.25in)
 
   // title page
   text(size: 1.5em)[#title]
