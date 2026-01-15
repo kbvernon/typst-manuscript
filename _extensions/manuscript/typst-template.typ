@@ -15,11 +15,16 @@
     paper: "us-letter", 
     margin: (x: 1in, y: 1in)
   )
-  set par(justify: false)
-  set text(lang: "en",
+  set par(
+    justify: false,
+    spacing: 1.35em
+  )
+  set text(
+    lang: "en",
            region: "US",
            font: font,
-           size: fontsize)
+    size: fontsize
+  )
   set heading(numbering: "1.1.")
   show heading.where(level: 1): it => block(it, below: 1.2em) 
   show heading.where(level: 2): it => block(it, below: 0.9em) 
