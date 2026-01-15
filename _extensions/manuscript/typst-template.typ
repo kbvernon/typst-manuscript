@@ -29,6 +29,37 @@
   show heading.where(level: 1): it => block(it, below: 1.2em) 
   show heading.where(level: 2): it => block(it, below: 0.9em) 
 
+  show figure: it => place(
+    top,
+    float: true,
+    clearance: 1.5em,
+    block(
+      spacing: 1.5em,
+      it
+    )
+  )
+
+  show figure.caption: set align(left)
+  show figure.caption: set text(size: 0.9em)
+  show figure.caption: it => context {
+    show: block.with(inset: (x: 5%))
+    if it.numbering != none and it.supplement != none {
+      let sequence = [].func()
+      let supplement = it.supplement
+      let numbers = if it.numbering != none {
+        it.counter.display(it.numbering)
+      }
+      let is-empty-supplement = {
+        it.supplement.func() == sequence and it.supplement.children.len() == 0
+      }
+      if not is-empty-supplement { supplement += [~] }
+      strong[#supplement#numbers]
+      it.separator
+    }
+    it.body
+  }
+
+
   // title page
   text(size: 1.5em)[#title]
   if subtitle != none { 
