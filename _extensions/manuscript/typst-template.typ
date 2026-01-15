@@ -62,6 +62,9 @@
   set list(indent: 0.25in)
   set enum(indent: 0.25in)
 
+  show cite: set text(rgb("#467886"))
+  show ref: set text(rgb("#467886"))
+
   // title page
   text(size: 1.5em)[#title]
   if subtitle != none { 
